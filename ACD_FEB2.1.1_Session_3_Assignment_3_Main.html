@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Dropdown</title>
+	<style>
+		.dropdownbutton {
+			background-color: light blue;
+			color: black;
+			padding: 16px;
+			font-size: 16px;
+			border: 2px dotted black;
+			cursor: pointer;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+
+		}
+
+		.dropdownlist {
+			display: none;
+			position: absolute;
+			background-color: blue;
+		}
+
+		.dropdownlist a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+			width: 268px;
+		}
+
+		.dropdownlist a:hover {background-color: yellow}
+
+		.dropdown:hover .dropdownlist {
+			display: block;
+		}
+
+		.dropdown:hover .dropdownbutton {
+			background-color: green;
+			color: white;
+		}
+		button{
+			width: 300px;
+		}
+	</style>
+	</head>
+	<body>
+		<p>Please move mouse over the button to see drop down list.</p>
+		<div class="dropdown">
+			<button class="dropdownbutton">Dropdown Button</button>
+			<div class="dropdownlist">
+				<a href="home.html">Home</a>
+				<a href="about.html">About</a>
+				<a href="contact.html">Contact</a>
+			</div>
+		</div>
+	</body>
+</html>
